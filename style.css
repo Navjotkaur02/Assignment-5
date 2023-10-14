@@ -1,0 +1,64 @@
+.container {
+    text-align: center;
+  }
+  
+  .doomsday {
+    width: 200px;
+    height: 60px;
+    background-color: #ff5733;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    animation: pulse 2s infinite, hoverWarn 1s infinite;
+    transition: transform 0.2s ease;
+  }
+  
+  .doomsday:active {
+    animation: pressDoomsday 2s;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes hoverWarn {
+    0% {
+      transform: scale(1);
+      background-color: #ff5733;
+    }
+    50% {
+      transform: scale(1.05);
+      background-color: #ff350e;
+    }
+    100% {
+      transform: scale(1);
+      background-color: #ff5733;
+    }
+  }
+  
+  @keyframes pressDoomsday {
+    0% {
+      transform: scale(1);
+      background-color: #ff5733;
+    }
+    50% {
+      transform: scale(1.05);
+      background-color: #ff350e;
+    }
+    100% {
+      transform: scale(1);
+      background-color: #ff5733;
+    }
+  }
